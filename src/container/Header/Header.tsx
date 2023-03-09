@@ -3,13 +3,13 @@ import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
 import IconButton from '@mui/material/IconButton';
-import Typography from '@mui/material/Typography';
 import Menu from '@mui/material/Menu';
 import MenuIcon from '@mui/icons-material/Menu';
 import Container from '@mui/material/Container';
 import Button from '@mui/material/Button';
 import MenuItem from '@mui/material/MenuItem';
 import './Header.scss'
+import Logo from 'components/Logo/Logo'
 
 
 const pages = ['Home', 'About', 'Adventure', 'Travel', 'Discovery'];
@@ -28,30 +28,12 @@ const handleCloseNavMenu = () => {
 
   return (
     <AppBar position="static" className='app-bar'>
-      <Container maxWidth="xl">
+      <Container maxWidth="lg">
         <Toolbar disableGutters>
-         <Typography
-            variant="h6"
-            noWrap
-            component="a"
-            href="/"
-            sx={{
-              mr: 2,
-              display: { lg: 'flex' },
-              fontFamily: "MonteCarlo, cursive",
-            fontWeight: 300,
-            fontSize: '42px',
-            letterSpacing: '.1rem',
-            color: 'inherit',
-            textDecoration: 'none',
-            size: "xl",
-            }}
-          >
-            Travelling
-         </Typography>
-         <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none'}}}>
+        <Logo/>
+         <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none', justifyContent:'flex-end'}}}>
             <IconButton
-              size="large"
+              size="small"
               aria-label="account of current user"
               aria-controls="menu-appbar"
               aria-haspopup="true"
@@ -79,15 +61,13 @@ const handleCloseNavMenu = () => {
               }}
             >
               {pages.map((page) => (
-                <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center">{page}</Typography>
-                </MenuItem>
+                <MenuItem key={page} onClick={handleCloseNavMenu}></MenuItem>
               ))}
             </Menu>
           </Box>
          <Box sx={{ flexGrow: 1, display: { sm: 'none', md: 'flex', justifyContent: 'flex-end', gap: '30px'}}}>
             {pages.map((page) => (
-              <Button
+              <Button className='icon-item'
                 key={page}
                 onClick={handleCloseNavMenu}
                 sx={{ my: 2, color: 'white', display: 'flex'}}

@@ -5,5 +5,19 @@
    position: sticky;
    top: 0px;
    z-index: 5;
-   
 }
+
+.icon-item{
+   position: relative;
+   border-style: solid;
+  border-color: transparent;
+   transition: 250ms;
+}
+
+.icon-item:hover{
+   color:white;
+   opacity: 0.4;
+   transition: 250ms;
+}
+   
+

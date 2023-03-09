@@ -1,0 +1,24 @@
+.d-block w-100{
+   position: absolute;
+   width: 100%;
+   height: auto;
+}
+
+.slider {
+   position: relative;
+   width: 100%;
+   height: 100vh;
+ }
+
+.slider-title{
+   position: absolute;
+   width: 700px;
+   bottom: 5%;
+   left: 12%;
+   color: white;
+   font-weight: 600;
+   font-size: 65px;
+   line-height: 70px;
+   padding: 15px;
+   font-family: 'Montserrat', sans-serif;
+}
