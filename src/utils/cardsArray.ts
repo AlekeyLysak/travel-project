@@ -51,7 +51,7 @@ const cardsArray:CardProps[] = [
       description:'Moraine Lake is a glacially-fed lake located in Banff National Park in Alberta, Canada. It is known for its crystal clear turquoise blue water and stunning mountain backdrop, and is one of the most photographed lakes in Canada.'
    },
    {
-      title: 'Moraine lake, Canada',
+      title: 'Desert Namib, Namibia',
       date: '08.08.2021',
       description:'Moraine Lake is a glacially-fed lake located in Banff National Park in Alberta, Canada. It is known for its crystal clear turquoise blue water and stunning mountain backdrop, and is one of the most photographed lakes in Canada.'
    },

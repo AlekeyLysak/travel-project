@@ -19,12 +19,16 @@ const PopularTopics = (props: Props) => {
 
         <Grid container spacing={6} rowSpacing={4}>
            {
-              cardsArray.map((product: CardProps) => (
+              cardsArray.map(({
+                 title,
+                 date,
+                 description,
+              }: CardProps) => (
                <Grid item xs={12} sm={6} md={4}>
                     <PopularTopicsItem
-                       title={product.title}
-                       date={product.date}
-                       description={product.description} />
+                       title={title}
+                       date={date}
+                       description={description} />
             </Grid>
               ))
            }
