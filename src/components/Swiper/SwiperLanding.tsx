@@ -42,7 +42,7 @@ const SwiperLanding = (props: Props) => {
         <SwiperSlide>
            <img src='https://getwalls.io/wallpapers/320608/2020--06--santorini-4k-hd-wallpaper-photo-gallery-free-download-pc.jpg' alt="Falls" style={{ height: "100vh", width: '100%', objectFit: 'cover' }} /></SwiperSlide>
         <SwiperSlide>
-           <img src='https://cdn.wallpapersafari.com/87/26/HlM8pO.jpg' alt="Travel" style={{ height: "100vh", width: '100%', objectFit: 'cover' }} /></SwiperSlide>
+           <img src='https://r4.wallpaperflare.com/wallpaper/618/991/649/wall-jiankou-great-wall-of-china-great-wall-wallpaper-e7af12c41f052f1a7fb2d42161d1e745.jpg' alt="Travel" style={{ height: "100vh", width: '100%', objectFit: 'cover' }} /></SwiperSlide>
         <SwiperSlide>
            <img src='https://r4.wallpaperflare.com/wallpaper/541/674/363/grand-canyon-usa-arizona-sunset-nature-hd-wallpaper-0acabbce460123b344651d3671a0d189.jpg' alt="Travel" style={{ height: "100vh", width: '100vw', objectFit: 'cover' }} /></SwiperSlide>
         <SwiperSlide>
