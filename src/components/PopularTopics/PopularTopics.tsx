@@ -4,12 +4,6 @@ import cardsArray from 'utils/cardsArray';
 
 type Props = {}
 
-type CardProps = {
-   title: string
-   date: string
-   description: string
-}
-
 const PopularTopics = (props: Props) => {
   return (
      <>
@@ -23,8 +17,8 @@ const PopularTopics = (props: Props) => {
                  title,
                  date,
                  description,
-              }: CardProps) => (
-               <Grid item xs={12} sm={6} md={4}>
+              }, i) => (
+               <Grid item xs={12} sm={6} md={4} key={i}>
                     <PopularTopicsItem
                        title={title}
                        date={date}

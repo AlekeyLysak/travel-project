@@ -1,10 +1,10 @@
-type CardProps = {
+type Card = {
    title: string
    date: string
    description: string
 }
 
-const cardsArray:CardProps[] = [
+const cardsArray:Card[] = [
    {
       title: 'Moraine lake, Canada',
       date: '08.08.2021',
