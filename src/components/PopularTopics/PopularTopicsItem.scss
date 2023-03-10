@@ -19,3 +19,20 @@
 .MuiCardHeader-title, .MuiCardHeader-subheader, .MuiCardContent-content, .MuiCardContent-content{
    font-family: 'Josefin Sans', sans-serif;
 }
+
+.cart{
+   cursor: pointer;
+   border-radius: 15px;
+   background-color: #f2f8f9;
+   border: none;
+}
+
+.cart:hover {
+   transition: all 0.3s ease-out;
+    box-shadow: 0px 4px 8px rgba(38, 38, 38, 0.2);
+    background-color: white;
+}
+
+.card-image{
+   border:3px solid orangered;
+}
