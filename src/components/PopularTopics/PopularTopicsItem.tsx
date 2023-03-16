@@ -15,21 +15,22 @@ type Props = {
     image: string
 }
 
-class PopularTopicsItem extends Component <Props>{
+class PopularTopicsItem extends Component<Props> {
     render() {
+        const { title, date, description, image } = this.props
         return (
             <Card variant="outlined" sx={{ maxWidth: 345 }} className="cart">
                 <CardContent>
                     <div className="card-image">
-                        <img src={this.props.image} alt="" />
+                        <img src={image} alt="" />
                     </div>
-                    <CardHeader title={this.props.title} subheader={this.props.date} />
+                    <CardHeader title={title} subheader={date} />
                     <Typography
                         variant="body2"
                         color="text.secondary"
                         className="topics__content"
                     >
-                        {this.props.description}
+                        {description}
                     </Typography>
                 </CardContent>
                 <CardActions disableSpacing>
@@ -41,7 +42,5 @@ class PopularTopicsItem extends Component <Props>{
         )
     }
 }
-
-// const PopularTopicsItem = ({ title, date, description, image }: Props) => {}
 
 export default PopularTopicsItem
