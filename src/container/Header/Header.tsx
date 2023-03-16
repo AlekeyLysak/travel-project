@@ -12,7 +12,7 @@ import './Header.scss'
 import Logo from 'components/Logo/Logo'
 
 
-const pages = ['Home', 'About', 'Adventure', 'Travel', 'Discovery'];
+const pages = ['Home',  'Adventure', 'Travel', 'Discovery'];
 
 function Header() {
   const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(null);
