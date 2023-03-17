@@ -25,6 +25,7 @@
    border-radius: 15px;
    background-color: #f2f8f9;
    border: none;
+   height: 100%;
 }
 
 .cart:hover {
@@ -35,11 +36,61 @@
 
 .card-image{
   text-align: center;
-   border:2px solid orangered;
-   border-radius: 10%;
+  border-radius: 15%;
    img{
     width: 310px;
     height: 200px;
-    border-radius: 9%;
+    border-radius: 14%;
+    border:2px solid orange;
    }
+}
+
+.red-like{
+  position: relative;
+  display: flex;
+  color: red;
+}
+
+.btn-wrap{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #6C757D;
+.btn-see{
+    font-family: 'Josefin Sans', sans-serif;
+    color: white;
+    border: none;
+    padding: 8px 18px;
+    border-radius: 15px;
+    background-color: orange;
+    bottom: 10px;
+    font-size: 15px;
+  .btn-see:hover{
+      background-color: orangered;
+      border: none;
+    }
+  }  
+}
+  
+.quote{
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  align-items:flex-end;
+  
+}
+
+.border-text{
+  position: relative;
+  font-size: 32px;
+  padding: 0 45px 0 45px;
+  border-left: 15px solid orange;
+  border-right: 4px solid orange;
+  font-family: 'Redressed', cursive;
+}
+
+.author-text{
+  position: relative;
+  font-size: 26px;
+  font-family: 'Redressed', cursive;
 }

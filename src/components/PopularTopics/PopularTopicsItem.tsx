@@ -1,12 +1,12 @@
 import Card from '@mui/material/Card'
 import CardHeader from '@mui/material/CardHeader'
 import CardContent from '@mui/material/CardContent'
-import CardActions from '@mui/material/CardActions'
 import IconButton from '@mui/material/IconButton'
 import Typography from '@mui/material/Typography'
-import FavoriteIcon from '@mui/icons-material/Favorite'
+import FavoriteBorderRoundedIcon from '@mui/icons-material/FavoriteBorderRounded'
 import './PopularTopicsItem.scss'
 import { Component } from 'react'
+import { Button, CardActions } from '@mui/material'
 
 type Props = {
     title: string
@@ -20,6 +20,15 @@ class PopularTopicsItem extends Component<Props> {
         const { title, date, description, image } = this.props
         return (
             <Card variant="outlined" sx={{ maxWidth: 345 }} className="cart">
+                <IconButton
+                    sx={{
+                        ml: 'auto',
+                        alignSelf: 'flex-end',
+                        bottom: '0',
+                    }}
+                >
+                    <FavoriteBorderRoundedIcon className="red-like" />
+                </IconButton>
                 <CardContent>
                     <div className="card-image">
                         <img src={image} alt="" />
@@ -33,10 +42,11 @@ class PopularTopicsItem extends Component<Props> {
                         {description}
                     </Typography>
                 </CardContent>
-                <CardActions disableSpacing>
-                    <IconButton aria-label="add to favorites">
-                        <FavoriteIcon />
-                    </IconButton>
+                <CardActions className='btn-wrap'>
+                    <Button 
+                    variant="outlined" size="small" className='btn-see'>
+                        See more...
+                    </Button>
                 </CardActions>
             </Card>
         )

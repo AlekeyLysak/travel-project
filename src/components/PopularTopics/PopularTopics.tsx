@@ -7,9 +7,16 @@ type Props = {}
 const PopularTopics = (props: Props) => {
     return (
         <>
+        <Typography 
+        className='quote' variant='h5'align='center' component='h2' margin='55px'>
+          <p className='border-text'>"In twenty years you will regret more not what you did, but what you didn't do. So throw off the knots, swim out of the safe harbors. Catch the wind in your sails. Explore. Dream. Open up."</p>
+          </Typography>
+          <Typography variant="h6" align='right'>
+          <p className='author-text'>-Mark Twain</p>
+        </Typography>
             <Typography
                 className="topics__title"
-                variant="h5"
+                
                 align="left"
                 component="h2"
             >

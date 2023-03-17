@@ -1,0 +1,109 @@
+.footer {
+  background-color: #1b1a1a;
+  color: #fff;
+  margin-top: 60px;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.footer-section {
+  flex: 1;
+  margin-right: 125px;
+  margin-top: 40px;
+}
+
+.footer-section h2 {
+  margin-bottom: 20px;
+}
+
+.footer-bottom{
+  display: flex;
+  justify-content: center;
+  margin-top: 70px;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 20px;
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.socials a {
+  display: inline-block;
+  margin-right: 20px;
+  font-size: 1.3rem;
+  color: #fff;
+  transition: all 0.3s ease-in-out;
+}
+
+.socials a:hover {
+  transform: scale(1.2);
+  color: orange;
+}
+
+.links ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.links li {
+  margin-bottom: 10px;
+}
+
+.links a {
+  color: #fff;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.links-title{
+  font-size: 28px;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.links a:hover {
+  color: orange;
+}
+
+.contact-form input,
+.contact-form textarea {
+  display: block;
+  width: 100%;
+  padding: 10px;
+}
+
+.text-logo{
+  font-family: 'Josefin Sans', sans-serif;
+  font-style: 18px;
+  color: orange;
+}
+
+.send{
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 40px;
+  background-color: orange;
+  border: none;
+  border-radius: 15px;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 18px;
+}
+
+.massage, .mail{
+  margin-top: 20px;
+  outline: none;
+  border-radius: 10px;
+  border: none;
+}
+
