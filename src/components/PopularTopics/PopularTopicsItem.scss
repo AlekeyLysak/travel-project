@@ -51,12 +51,13 @@
   color: red;
   border: none;
   margin: -25px 0px 0px -15px;
-  
-}
+ }
 
 .like:hover{
   outline: none;
   border: none;
+  overflow: hidden; 
+  background-image: transparent;
 }
 
 .btn-wrap{
@@ -108,8 +109,8 @@
   text-transform:unset;
   color: rgb(35, 15, 15);
   font-weight: 600;
-  font-size: 17px;
+  font-size: 16px;
   left: 265px;
-  text-align: center;
+ text-align: center;
   font-family: 'Josefin Sans', sans-serif;
 }

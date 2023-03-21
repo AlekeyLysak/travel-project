@@ -7,8 +7,9 @@ import Typography from '@mui/material/Typography'
 import './PopularTopicsItem.scss'
 import { Button, CardActions } from '@mui/material'
 import FavoriteIcon from '@mui/icons-material/Favorite'
+import { addLike, removeLike } from 'redux/likeReducer'
 import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder'
-import { useAppSelector } from 'redux/hooks'
+import { useAppDispatch, useAppSelector } from 'redux/hooks'
 
 type Props = {
     id:number
@@ -27,14 +28,17 @@ const PopularTopicsItem = ({
     image,
     category,
 }: Props) => {
-    const isLiked = useAppSelector((state) => state.productsLikeState[id])
+    
+  const isLiked = useAppSelector((state) => state.productsLikeState[id])
+  const dispatch = useAppDispatch()
+
     return (
         <Card variant="outlined" sx={{ maxWidth: 345 }} className="cart">
             <Typography
                 className="category"
                 sx={{
                     backgroundColor: 'orange',
-                    width: '90px',
+                    width: '80px',
                     height:'27px',
                     marginRight:'20px',
                     borderRadius:'7px'
@@ -49,7 +53,11 @@ const PopularTopicsItem = ({
                     bottom: '0',
                 }}
             >
-                <Button variant="outlined" className='like'>
+                <Button className='like'onClick={() =>
+                        isLiked
+                            ? dispatch(removeLike(id))
+                            : dispatch(addLike(id))
+                    }>
                     {isLiked ? <FavoriteIcon /> : <FavoriteBorderIcon />}
                 </Button>
             </IconButton>
