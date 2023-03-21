@@ -45,10 +45,18 @@
    }
 }
 
-.red-like{
+.like{
   position: relative;
   display: flex;
   color: red;
+  border: none;
+  margin: -25px 0px 0px -15px;
+  
+}
+
+.like:hover{
+  outline: none;
+  border: none;
 }
 
 .btn-wrap{
@@ -77,14 +85,13 @@
   display: flex;
   justify-content: flex-end;
   align-items:flex-end;
-  
 }
 
 .border-text{
   position: relative;
   font-size: 32px;
   padding: 0 45px 0 45px;
-  border-left: 15px solid orange;
+  border-left: 20px solid orange;
   border-right: 4px solid orange;
   font-family: 'Redressed', cursive;
 }
@@ -93,4 +100,16 @@
   position: relative;
   font-size: 26px;
   font-family: 'Redressed', cursive;
+}
+
+.category{
+  position: relative;
+  display: block;
+  text-transform:unset;
+  color: rgb(35, 15, 15);
+  font-weight: 600;
+  font-size: 17px;
+  left: 265px;
+  text-align: center;
+  font-family: 'Josefin Sans', sans-serif;
 }

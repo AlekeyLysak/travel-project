@@ -8,8 +8,8 @@ import 'swiper/css/scrollbar';
 import 'swiper/css/effect-fade';
 import 'swiper/css/autoplay';
 
-
 type Props = {}
+
 const SwiperLanding = (props: Props) => {
   return (
      <Swiper className='swiper'
@@ -22,7 +22,7 @@ const SwiperLanding = (props: Props) => {
       autoplay={{ delay: 2000 }}
       onSwiper={(swiper) => console.log(swiper)}
       onSlideChange={() => console.log('slide change')}>
-        
+    
         <SwiperSlide>
             <div className="slider">
               <h3 className='slider-title'>Moraine lake, Canada</h3>
@@ -94,6 +94,7 @@ const SwiperLanding = (props: Props) => {
            </div>
            </SwiperSlide>
       </Swiper>
+      
    )
 }
 export default SwiperLanding

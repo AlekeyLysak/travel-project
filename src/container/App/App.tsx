@@ -1,19 +1,40 @@
 import Header from 'container/Header/Header'
-import Main from 'container/Main/Main'
 import Footer from 'container/Footer/Footer'
 import CssBaseline from '@mui/material/CssBaseline'
-import { StyledEngineProvider } from '@mui/material/styles'
-import SwiperLanding from 'components/Swiper/SwiperLanding'
+import { createTheme, StyledEngineProvider } from '@mui/material/styles'
+import { Route, Routes } from 'react-router-dom'
+import Home from 'pages/Home/Home'
+import AdventurePage from 'pages/Adventure/AdventurePage'
+import { ThemeProvider } from '@mui/system'
+import TravelPage from 'pages/Travel/TravelPage'
+import DiscoveryPage from 'pages/Discovery/DiscoveryPage'
+import HistoryPage from 'pages/History/HistoryPage'
 
 type Props = {}
+
+const theme = createTheme({
+  typography: {
+      fontFamily: 'Montserrat, sans-serif',
+  },
+})
+
 const App = (props: Props) => {
     return (
         <StyledEngineProvider injectFirst>
-            <CssBaseline />
-            <Header />
-            <SwiperLanding />
-            <Main />
-            <Footer/>
+            <ThemeProvider theme={theme}>
+                <CssBaseline />
+                <Header />
+
+                <Routes>
+                    <Route path="/" element={<Home />} />
+                    <Route path="adventure" element={<AdventurePage />} />
+                    <Route path="travel" element={<TravelPage />} />
+                    <Route path="discovery" element={<DiscoveryPage />} />
+                    <Route path="history" element={<HistoryPage />} />
+                </Routes>
+
+                <Footer />
+            </ThemeProvider>
         </StyledEngineProvider>
     )
 }

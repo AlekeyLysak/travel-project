@@ -1,0 +1,31 @@
+.quote{
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  align-items:flex-end;
+}
+
+.border-text{
+  position: relative;
+  font-size: 32px;
+  padding: 0 85px 0 85px;
+  border-left: 20px solid orange;
+  border-right: 4px solid orange;
+  font-family: 'Redressed', cursive;
+}
+
+.author-text{
+  position: relative;
+  font-size: 26px;
+  font-family: 'Redressed', cursive;
+}
+
+.category{
+  position: relative;
+  display: block;
+ text-transform:unset;
+  color: rgb(255, 255, 255);
+  font-weight: 500;
+  left: 265px;
+  font-family: 'Josefin Sans', sans-serif;
+}

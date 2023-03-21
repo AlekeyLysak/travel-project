@@ -1,0 +1,22 @@
+.menu-item {
+  text-decoration: none;
+  color: white;
+  font-weight: 900;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+}
+
+.menu-item-active{
+  text-decoration: none;
+  color:orange;
+  font-weight: 900;
+  font-family: 'Montserrat', sans-serif;
+  border-bottom: 1px solid orange;
+}
+
+.menu-item:hover{
+  border-bottom: 1px solid orange;
+  color: orange;
+  transition: 250ms;
+}

@@ -7,12 +7,13 @@
 .footer-content {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: inherit;
+  padding: 0 0 0 80px;
 }
 
 .footer-section {
   flex: 1;
-  margin-right: 125px;
+  margin-right: 100px;
   margin-top: 40px;
 }
 
