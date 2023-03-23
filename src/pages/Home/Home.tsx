@@ -10,7 +10,7 @@ const Home = (props: Props) => {
         <div>
             <SwiperLanding />
             <Container>
-                <PopularTopics />
+                <PopularTopics/>
               </Container>
           </div>
     )

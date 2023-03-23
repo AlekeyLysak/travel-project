@@ -1,14 +1,16 @@
-import React from 'react';
 import './Footer.scss';
 import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin, FaGoogle } from 'react-icons/fa';
+import video from '../../assets/rock.mp4'
+import logo from 'assets/logo.png'
 
 const Footer = () => {
   return (
     <footer className="footer">
+        <video src={video} autoPlay muted loop typeof='rock/mp4' className='footer-video' />
       <div className="container">
         <div className="footer-content">
           <div className="footer-section about">
-            <h2 className="logo">Travelling</h2>
+          <img src={logo} alt="Fake shop" className='logo' />
             <p className='text-logo'>
             "I travel not to go somewhere, but to go. The main thing is movement."
             </p>
@@ -58,7 +60,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="footer-bottom">
-        <p>© 2023 <span>Travelling</span>. All Rights Reserved.</p>
+        <p>© 2023 <img src={logo} alt="Fake shop" className='logo-name'/>. All Rights Reserved.</p>
       </div>
     </footer>
   );

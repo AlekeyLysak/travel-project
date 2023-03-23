@@ -4,6 +4,7 @@ import { Container } from '@mui/material'
 import './Header.scss'
 import Logo from 'components/Logo/Logo'
 import Menu from 'components/Menu/Menu'
+import LikeHeader from 'components/LikeHeader/LikeHeader'
 
 
 type Props = {}
@@ -15,7 +16,7 @@ const Header = (props: Props) => {
             <Toolbar disableGutters>
                 <Logo />
                 <Menu />
-               
+               <LikeHeader/>
             </Toolbar>
         </Container>
     </AppBar>

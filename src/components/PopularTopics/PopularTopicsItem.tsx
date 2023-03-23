@@ -10,9 +10,11 @@ import FavoriteIcon from '@mui/icons-material/Favorite'
 import { addLike, removeLike } from 'redux/likeReducer'
 import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder'
 import { useAppDispatch, useAppSelector } from 'redux/hooks'
+import { Link } from 'react-router-dom'
+
 
 type Props = {
-    id:number
+    id: number
     title: string
     date: string
     description: string
@@ -28,9 +30,8 @@ const PopularTopicsItem = ({
     image,
     category,
 }: Props) => {
-    
-  const isLiked = useAppSelector((state) => state.productsLikeState[id])
-  const dispatch = useAppDispatch()
+    const isLiked = useAppSelector((state) => state.productsLikeState[id])
+    const dispatch = useAppDispatch()
 
     return (
         <Card variant="outlined" sx={{ maxWidth: 345 }} className="cart">
@@ -39,9 +40,9 @@ const PopularTopicsItem = ({
                 sx={{
                     backgroundColor: 'orange',
                     width: '80px',
-                    height:'27px',
-                    marginRight:'20px',
-                    borderRadius:'7px'
+                    height: '27px',
+                    marginRight: '20px',
+                    borderRadius: '7px',
                 }}
             >
                 {category}
@@ -53,11 +54,14 @@ const PopularTopicsItem = ({
                     bottom: '0',
                 }}
             >
-                <Button className='like'onClick={() =>
+                <Button
+                    className="like"
+                    onClick={() =>
                         isLiked
                             ? dispatch(removeLike(id))
                             : dispatch(addLike(id))
-                    }>
+                    }
+                >
                     {isLiked ? <FavoriteIcon /> : <FavoriteBorderIcon />}
                 </Button>
             </IconButton>
@@ -76,11 +80,14 @@ const PopularTopicsItem = ({
                 </Typography>
             </CardContent>
             <CardActions className="btn-wrap">
-                <Button variant="outlined" size="small" className="btn-see">
-                    See more...
-                </Button>
+                <Link to={`/info/${id}`} className="info-page">
+                    <Button variant="outlined" size="small" className="btn-see">
+                        See more...
+                    </Button>
+                </Link>
             </CardActions>
         </Card>
+        
     )
 }
 

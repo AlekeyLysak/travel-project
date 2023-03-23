@@ -1,27 +1,18 @@
 import Typography from '@mui/material/Typography'
 import './Logo.scss'
+import logo from 'assets/logo.png'
 
 type Props = {}
 const Logo = (props: Props) => {
     return (
-        <Typography className='title-logo'
+        <Typography
             variant="h6"
-            noWrap
-            component="a"
-            href="/"
+            component="div"
             sx={{
-                mr: 2,
-                display: { lg: 'flex'},
-                fontFamily: 'MonteCarlo, cursive',
-                fontWeight: 300,
-                fontSize: '42px',
-                letterSpacing: '.1rem',
-                color: 'white',
-                textDecoration: 'none',
-                size: 'xl',
-              }}
+                flexGrow: 1,
+            }}
         >
-            Travelling
+            <img src={logo} alt="Logo" className="logos" />
         </Typography>
     )
 }

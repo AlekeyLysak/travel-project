@@ -11,7 +11,7 @@ const Menu = (props: Props) => {
             <MenuItem to="/discovery">Discovery</MenuItem>
             <MenuItem to="/history">History</MenuItem>
             <MenuItem to="/favourite">Favourite</MenuItem>
-       </>
+        </>
     )
 }
 

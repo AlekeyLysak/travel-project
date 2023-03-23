@@ -13,7 +13,7 @@ type Props = {
     date: string
     description: string
     image: string
-    category:string
+    category: string
 }
 
 class AdventurePageItem extends Component<Props> {
@@ -21,13 +21,18 @@ class AdventurePageItem extends Component<Props> {
         const { title, date, description, image, category } = this.props
         return (
             <Card variant="outlined" sx={{ maxWidth: 345 }} className="cart">
-              <Typography className='category'
-              sx={{
-                      backgroundColor:'green',
-                      width:'80px',
-                    }}>
-                      {category}
-                    </Typography>
+                <Typography
+                    className="category"
+                    sx={{
+                        backgroundColor: 'green',
+                        width: '80px',
+                        height: '27px',
+                        marginRight: '20px',
+                        borderRadius: '7px',
+                    }}
+                >
+                    {category}
+                </Typography>
                 <IconButton
                     sx={{
                         ml: 'auto',
@@ -37,12 +42,12 @@ class AdventurePageItem extends Component<Props> {
                 >
                     <FavoriteBorderRoundedIcon className="red-like" />
                 </IconButton>
-                
+
                 <CardContent>
                     <div className="card-image">
                         <img src={image} alt="" />
                     </div>
-                   
+
                     <CardHeader title={title} subheader={date} />
                     <Typography
                         variant="body2"
@@ -52,9 +57,8 @@ class AdventurePageItem extends Component<Props> {
                         {description}
                     </Typography>
                 </CardContent>
-                <CardActions className='btn-wrap'>
-                    <Button 
-                    variant="outlined" size="small" className='btn-see'>
+                <CardActions className="btn-wrap">
+                    <Button variant="outlined" size="small" className="btn-see">
                         See more...
                     </Button>
                 </CardActions>
