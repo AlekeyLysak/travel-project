@@ -1,6 +1,9 @@
 import Typography from '@mui/material/Typography'
 import './Logo.scss'
 import logo from 'assets/logo.png'
+import { Link } from 'react-router-dom'
+
+
 
 type Props = {}
 const Logo = (props: Props) => {
@@ -12,7 +15,8 @@ const Logo = (props: Props) => {
                 flexGrow: 1,
             }}
         >
-            <img src={logo} alt="Logo" className="logos" />
+            <Link to="/"><img src={logo} alt="Logo" className="logos" /></Link>
+            <Link to="/"><p className='logo-history'>+ history</p></Link>
         </Typography>
     )
 }

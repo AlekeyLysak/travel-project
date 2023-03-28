@@ -1,0 +1,147 @@
+h3 {
+  font-size: 34px;
+  line-height: 38px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  position: relative;
+  margin-bottom: 30px;
+  padding-bottom: 10px;
+  font-weight: 300;
+}
+
+.landing-image{
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+}
+
+.photo{
+  position: absolute;
+  width: 150px;
+  top: 47rem;
+  right: 45%;
+}
+
+.product-border{
+  background: #286435;
+    border: none;
+    height: 8px;
+    margin: 4rem auto;
+    width: 400px;
+}
+
+.product-border1{
+  position: absolute;
+  background: #286435;
+    border: none;
+    height: 8px;
+    width: 400px;
+    left: 38%;
+    bottom: 50px;
+    text-align: center;
+}
+
+.product-title{
+    font-size: 42px;
+    line-height: 38px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    position: relative;
+    color: rgb(19, 83, 19);
+    font-family: 'Lora', serif;
+    text-align: center;
+    padding: 0px 0 20px;
+}
+
+.background{
+ position: relative;
+  background: #f1efef;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  height: 100%;
+}
+
+.product-subtitle{
+  font-size: 34px;
+    line-height: 38px;
+    text-transform:lowercase;
+    letter-spacing: 2px;
+    position: relative;
+    margin-bottom: 30px;
+    padding-bottom: 10px;
+    font-weight: 100;
+    color: #686559;
+    font-family: 'Lora', serif;
+    text-align: center;
+}
+
+.desc-title{
+    font-size: 30px;
+    line-height: 38px;
+    letter-spacing: 10px;
+    position: relative;
+    margin-top: 50px;
+    color: #C88059;
+    font-family: 'Dela Gothic One', cursive;
+    text-align: center;
+}
+
+.date{
+    font-size: 32px;
+    line-height: 38px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    position: relative;
+    color: #C88059;
+    font-family: 'Lora', serif;
+    text-align: center;  
+}
+
+.description{
+  font-family: 'Josefin Sans', sans-serif;
+    font-size: 21px;
+    line-height: 34px;
+    color: #686559;
+    padding-left: 110px;
+    padding-right: 110px;
+    text-align: center;
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+
+.archival-photo{
+  position: relative;
+  background: url(https://morainelake.com/wp-content/uploads/2017/06/image-history-01.jpg) center center no-repeat;;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  margin: 20px 0 40px 0;
+  border-radius: 15px;
+}
+
+.archival-photo1, .archival-photo2 {
+  position: relative;
+  display: inline-block;
+  flex-direction: row;
+  justify-content:space-around;
+  width: 50%;
+  height: 45vh;
+  padding-left: 10px;
+  padding-right: 10px;
+  object-fit: cover;
+  border-radius: 40px;
+}
+
+.description-bottom{
+    margin-bottom: 0px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 20px;
+    line-height: 28px;
+    color: #686559;
+    padding-left: 110px;
+    padding-right: 110px;
+    text-align: center;
+    padding-bottom: 150px;
+}
+
+

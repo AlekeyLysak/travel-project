@@ -1,9 +1,7 @@
 import Card from '@mui/material/Card'
 import CardHeader from '@mui/material/CardHeader'
 import CardContent from '@mui/material/CardContent'
-import IconButton from '@mui/material/IconButton'
 import Typography from '@mui/material/Typography'
-// import FavoriteBorderRoundedIcon from '@mui/icons-material/FavoriteBorderRounded'
 import './PopularTopicsItem.scss'
 import { Button, CardActions } from '@mui/material'
 import FavoriteIcon from '@mui/icons-material/Favorite'
@@ -11,7 +9,6 @@ import { addLike, removeLike } from 'redux/likeReducer'
 import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder'
 import { useAppDispatch, useAppSelector } from 'redux/hooks'
 import { Link } from 'react-router-dom'
-
 
 type Props = {
     id: number
@@ -47,24 +44,16 @@ const PopularTopicsItem = ({
             >
                 {category}
             </Typography>
-            <IconButton
-                sx={{
-                    ml: 'auto',
-                    alignSelf: 'flex-end',
-                    bottom: '0',
-                }}
+
+            <Button
+                className="like"
+                onClick={() =>
+                    isLiked ? dispatch(removeLike(id)) : dispatch(addLike(id))
+                }
             >
-                <Button
-                    className="like"
-                    onClick={() =>
-                        isLiked
-                            ? dispatch(removeLike(id))
-                            : dispatch(addLike(id))
-                    }
-                >
-                    {isLiked ? <FavoriteIcon /> : <FavoriteBorderIcon />}
-                </Button>
-            </IconButton>
+                {isLiked ? <FavoriteIcon /> : <FavoriteBorderIcon />}
+            </Button>
+
             <CardContent>
                 <div className="card-image">
                     <img src={image} alt="" />
@@ -80,14 +69,13 @@ const PopularTopicsItem = ({
                 </Typography>
             </CardContent>
             <CardActions className="btn-wrap">
-                <Link to={`/info/${id}`} className="info-page">
+                <Link to={`/${category}/${id}`} className="info-page">
                     <Button variant="outlined" size="small" className="btn-see">
-                        See more...
+                        Learn more...
                     </Button>
                 </Link>
             </CardActions>
         </Card>
-        
     )
 }
 

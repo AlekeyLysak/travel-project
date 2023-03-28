@@ -9,7 +9,8 @@ import { ThemeProvider } from '@mui/system'
 import TravelPage from 'pages/Travel/TravelPage'
 import DiscoveryPage from 'pages/Discovery/DiscoveryPage'
 import HistoryPage from 'pages/History/HistoryPage'
-import InfoPage from 'pages/Info/InfoPage'
+import ArticleContent from 'components/ArticleContent/ArticleContent'
+import Favourite from 'components/Favourite/Favourite'
 
 type Props = {}
 
@@ -25,14 +26,14 @@ const App = (props: Props) => {
             <ThemeProvider theme={theme}>
                 <CssBaseline />
                 <Header />
-                <Routes>
+               <Routes>
                     <Route path="/" element={<Home />} />
                     <Route path="adventure" element={<AdventurePage />} />
                     <Route path="travel" element={<TravelPage />} />
                     <Route path="discovery" element={<DiscoveryPage />} />
                     <Route path="history" element={<HistoryPage />} />
-                    <Route path="/info/:id" element={<InfoPage />} />
-                   
+                    <Route path="/:category/:id" element={<ArticleContent />} />
+                    <Route path="favourite" element={<Favourite />} />
                 </Routes>
                 <Footer />
             </ThemeProvider>

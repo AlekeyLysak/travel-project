@@ -10,9 +10,9 @@ const Home = (props: Props) => {
         <div>
             <SwiperLanding />
             <Container>
-                <PopularTopics/>
-              </Container>
-          </div>
+                <PopularTopics />
+            </Container>
+        </div>
     )
 }
 export default Home

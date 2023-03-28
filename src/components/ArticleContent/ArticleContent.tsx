@@ -1,30 +1,30 @@
-import { Typography } from '@mui/material'
 import './ArticleContent.scss'
+import cardsArray from '../../utils/cardsArray'
+import ArticleListItem from './ArticleListItem'
+import { useParams } from 'react-router-dom'
 
+type Props = {}
 
-type Props = {
-    id: number
-    image: string
-    title: string
-    description: string
-    category: string
-}
+const ArticleContent = (props: Props) => {
+  const { id } = useParams();
+const articleId = id ? parseInt(id) : undefined;
+    const article = cardsArray.find((x) => x.id === articleId)
 
-const ArticleContent = ({category}: Props) => {
     return (
         <>
-            <Typography
-                className="category"
-                sx={{
-                    backgroundColor: 'blue',
-                    width: '880px',
-                    height: '27px',
-                    marginRight: '20px',
-                    borderRadius: '7px',
-                }}
-            >
-                {category}
-            </Typography>
+            {article && (
+                <ArticleListItem
+                    id={article.id}
+                    image={article.image}
+                    article={article.article}
+                    title={article.title}
+                    description={article.description}
+                    category={article.category}
+                    date={article.date}
+                    picture={article.picture}
+                    desc={article.desc}
+                />
+            )}
         </>
     )
 }

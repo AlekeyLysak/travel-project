@@ -60,7 +60,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="footer-bottom">
-        <p>© 2023 <img src={logo} alt="Fake shop" className='logo-name'/>. All Rights Reserved.</p>
+        <p >© 2023 <img src={logo} alt="Fake shop" className='logo-name'/> All Rights Reserved.</p>
       </div>
     </footer>
   );

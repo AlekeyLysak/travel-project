@@ -19,7 +19,7 @@ const HistoryPage = (props: Props) => {
                         typeof="history/mp4"
                         className="ad-video"
                     />
-                    <h2 className="ad-title">HISTORY</h2>
+                    <h2 className="ad-titles">HISTORY</h2>
                 </div>
             </Typography>
             <Container>
@@ -28,7 +28,7 @@ const HistoryPage = (props: Props) => {
                     variant="h5"
                     align="center"
                     component="h2"
-                    marginTop="155px"
+                    marginTop="75px"
                 >
                     <p className="border-text">
                         “History is the treasury of our deeds, a witness to the
@@ -44,7 +44,7 @@ const HistoryPage = (props: Props) => {
                     align="left"
                     component="h2"
                 >
-                    Popular topics
+                    Category: <span className='red'>History</span>
                 </Typography>
 
                 <Grid container spacing={6} rowSpacing={4}>
@@ -59,8 +59,9 @@ const HistoryPage = (props: Props) => {
                                 image,
                                 category,
                             }) => (
-                                <Grid item xs={12} sm={6} md={4} key={id}>
+                                <Grid item xs={12} sm={6} md={4} key={id} className='main-content'>
                                     <HistoryPageItem
+                                        id={id}
                                         title={title}
                                         date={date}
                                         description={description}

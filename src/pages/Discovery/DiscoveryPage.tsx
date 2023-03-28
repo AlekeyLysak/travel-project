@@ -12,7 +12,7 @@ const DiscoveryPage = (props: Props) => {
         <Typography>
         <div>
           <video src={video} autoPlay muted loop typeof='waterfall/mp4' className='ad-video'/>
-          <h2 className='ad-title'>DISCOVERY</h2>
+          <h2 className='ad-titles'>DISCOVERY</h2>
           </div>
       </Typography>
             <Container>
@@ -38,7 +38,7 @@ const DiscoveryPage = (props: Props) => {
                     align="left"
                     component="h2"
                 >
-                    Popular topics
+                    Category:<span className='blue'> Discovery</span>
                 </Typography>
 
                 <Grid container spacing={6} rowSpacing={4}>
@@ -53,8 +53,9 @@ const DiscoveryPage = (props: Props) => {
                                 image,
                                 category,
                             }) => (
-                                <Grid item xs={12} sm={6} md={4} key={id}>
+                                <Grid item xs={12} sm={6} md={4} key={id} className='main-content'>
                                     <DiscoveryPageItem
+                                        id={id}
                                         title={title}
                                         date={date}
                                         description={description}

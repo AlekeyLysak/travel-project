@@ -28,7 +28,7 @@ const PopularTopics = (props: Props) => {
                 Popular topics
             </Typography>
 
-            <Grid container spacing={6} rowSpacing={4}>
+            <Grid container spacing={6} rowSpacing={4} className='main-content'>
                 {cardsArray
                 // .filter((product) => product.category === '')
                 .map(

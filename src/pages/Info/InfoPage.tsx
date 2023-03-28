@@ -1,9 +1,9 @@
 import { useParams } from 'react-router-dom'
-import cardsArray, { getProductsObject, Card  } from 'utils/cardsArray'
+import cardsArray, { getProductsObject, Cart  } from 'utils/cardsArray'
 
 type Props = {
     productsObject?: {
-        [id: number]:Card
+        [id: number]:Cart
     }
 }
 

@@ -7,6 +7,7 @@ export const store = configureStore({
   reducer: {
     productsLikeState: likeReducer,
     productsInCart: cartReducer,
+    adventureLikeState:likeReducer,
   },
 })
 
