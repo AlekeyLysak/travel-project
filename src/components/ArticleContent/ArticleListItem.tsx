@@ -1,6 +1,7 @@
 import { CardMedia, Typography } from '@mui/material'
 import { Container } from '@mui/system'
 import { Cart } from 'utils/cardsArray'
+import Reviews from 'components/Reviews/Reviews'
 
 const ArticleListItem = ({
     image,
@@ -60,6 +61,7 @@ const ArticleListItem = ({
                     <p className="description-bottom">{desc[9]}</p>
                     <div className="product-border1"></div>
                 </Container>
+                <Reviews />
             </Typography>
         </div>
     )
