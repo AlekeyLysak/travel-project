@@ -60,8 +60,8 @@ const ArticleListItem = ({
                     <p className="description">{desc[8]}</p>
                     <p className="description-bottom">{desc[9]}</p>
                     <div className="product-border1"></div>
+                 <Reviews />
                 </Container>
-                <Reviews />
             </Typography>
         </div>
     )
