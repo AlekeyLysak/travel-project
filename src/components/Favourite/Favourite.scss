@@ -8,3 +8,23 @@
   margin-right: 500px;
   font-weight: 500;
 }
+
+@media (max-width: 768px){
+.article-border {
+  position: relative;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  border-collapse: collapse;
+  padding: 25px 50px;
+  font-weight: 500;
+  margin-left: 50px;
+  margin-right: 50px;
+  }
+}
+
+@media (min-width: 1024px){
+  .article-border {
+    margin-left: 200px;
+    margin-right: 200px;
+  }
+}
