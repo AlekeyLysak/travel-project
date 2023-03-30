@@ -140,4 +140,65 @@ h3 {
     text-align: center;
  }
 
+@media (max-width: 768px){
+  .landing-image{
+    width: 100%;
+    height: 70vh;
+  }
+  .archival-photo {
+    height: 65vh;
+  }
+  .description{
+    font-size: 14px;
+    padding-left: 50px;
+    padding-right: 50px;
+    line-height: 22px;
+    margin-top: 10px;
+  }
+  .product-title{
+    font-size: 30px;
+  }
+  .product-subtitle{
+    font-size: 20px;
+    margin-bottom: 5px;
+  }
+  .date{
+    font-size: 25px;
+  }
+  .desc-title{
+    font-size: 20px;
+  }
+  .product-border {
+    margin: 2rem auto;
+    width: 300px;
+  }
+  .archival-photo1, .archival-photo2 {
+    width: 50%;
+    height: 30vh;
+  }
+  .archival-photo{
+    width: 100%;
+  height: 55vh;
+  }
+}
+
+@media (min-width:1024px) and (max-width:1200px){
+  .product-title{
+    font-size: 34px;
+  }
+  .product-subtitle{
+    font-size: 26px;
+    margin-bottom: 5px;
+  }
+  .description{
+    font-size: 18px;
+    padding-left: 50px;
+    padding-right: 50px;
+    line-height: 25px;
+  }
+  .desc-title{
+    font-size: 26px;
+  }
+}
+
 
