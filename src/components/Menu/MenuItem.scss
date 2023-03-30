@@ -27,3 +27,10 @@
   transition: 250ms;
   background-color: transparent;
 }
+
+@media (max-width: 768px){
+  .menu-item, .menu-item-active{
+    position: relative;
+    font-size: 10px;
+  }
+}
